@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+float maior(float a, float b, float c){
+    float numeromaior;
+    if (a > b && a > c)
+        numeromaior = a;
+    else if (b > a && b > c)
+        numeromaior = b;
+    else if (c > a && c > b)
+        numeromaior = c;
+    else
+        printf("ERRO!!! ");
+
+    return numeromaior;
+}
+
+ int main (){
+    float x, y, z;
+
+    printf("digite tres numeros: ");
+    scanf("%f%f%f", &x, &y, &z);
+    printf("maior numero e: %.2f", maior(x, y, z));
+
+    return 0;
+}
