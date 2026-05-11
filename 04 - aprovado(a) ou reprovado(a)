@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main () {
+    float nota1, nota2, nota3, nota4, media;
+    char sexo;
+
+    printf("digite quatro notas: ");
+    scanf("%f%f%f%f", &nota1, &nota2, &nota3, &nota4);
+
+    printf("digite seu sexo: ");
+    scanf(" %c", &sexo);
+
+    media = ((nota1 + nota2 + nota3 + nota4) / 4);
+
+    if(media >= 6 && (sexo == 'M' || sexo == 'm'))
+        printf("APROVADO");
+    else if(media >= 6 && (sexo == 'F' || sexo == 'f'))
+        printf ("APROVADA");
+    else if(media < 6 && (sexo == 'M' || sexo == 'm'))
+        printf ("REPROVADO");
+    else if(media < 6 && (sexo == 'F' || sexo == 'f'))
+        printf ("REPROVADA");
+    else
+        printf ("ERRO");
+
+    return 0;
+}
