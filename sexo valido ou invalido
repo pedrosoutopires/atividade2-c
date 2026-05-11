@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+
+    char sexo;
+
+    printf("escreva seu sexo: ");
+    scanf("%c", &sexo);
+
+    if (sexo == 'M' || sexo == 'm' || sexo == 'F' || sexo == 'f' )
+    printf("sexo valido");
+    else printf("sexo invalido");
+    return 0;
+
+}
