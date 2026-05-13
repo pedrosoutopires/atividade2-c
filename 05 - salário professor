@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+
+    int quantidadeaulas;
+    float salario;
+    char qualificacao;
+
+    printf("Digite a qualificacao:\n");
+    printf("g - graduado\n");
+    printf("m - mestre\n");
+    printf("d - doutor\n");
+    scanf(" %c", &qualificacao);
+
+    printf("Digite a quantidade de aulas: ");
+    scanf("%d", &quantidadeaulas);
+
+    switch (qualificacao) {
+
+        case 'g':
+            salario = quantidadeaulas * 12;
+            break;
+
+        case 'm':
+            salario = quantidadeaulas * 17;
+            break;
+
+        case 'd':
+            salario = quantidadeaulas * 25;
+            break;
+
+        default:
+            printf("ERRO!\n");
+            return 1;
+    }
+
+    printf("O salario e: %.2f\n", salario);
+
+    return 0;
+}
