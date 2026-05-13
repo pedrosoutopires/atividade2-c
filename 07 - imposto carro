@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    
+    int ano;
+    float valorcarro, imposto;
+    
+    printf("digite o ano de fabricacao do carro: ");
+    scanf("%d", &ano);
+    
+    printf("digite o valor do carro: ");
+    scanf("%f", &valorcarro);
+    
+    if (ano < 1990)
+        imposto = valorcarro * 0.1;
+    
+    else
+        imposto = valorcarro * 0.15;
+        
+    printf("o imposto e: %.2f", imposto);
+    
+    return 0;
+}
