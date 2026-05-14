@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main() {
+
+    int procedencia;
+    float produto, produtofinal;
+
+    printf("Digite a procedencia:\n");
+    printf("1 - Sul\n");
+    printf("2 - Norte\n");
+    printf("3 - Leste\n");
+    printf("4 - Oeste\n");
+    printf("5 - Importado\n");
+    scanf("%d", &procedencia);
+
+    printf("Digite o valor do produto: ");
+    scanf("%f", &produto);
+
+    switch (procedencia) {
+
+        case 1:
+            produtofinal = produto + (produto * 0.1);
+            break;
+
+        case 2:
+            produtofinal = produto + (produto * 0.15);
+            break;
+
+        case 3:
+            produtofinal = produto + (produto * 0.08);
+            break;
+
+        case 4:
+            produtofinal = produto + (produto * 0.12);
+            break;
+
+        case 5:
+            produtofinal = produto +(produto * 0.25);
+            break;
+
+        default:
+            printf("ERRO!\n");
+            return 1;
+    }
+
+    printf("O valor final do produto e: %.2f\n", produtofinal);
+
+    return 0;
+}
