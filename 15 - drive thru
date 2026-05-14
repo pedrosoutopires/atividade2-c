@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main(){
+    int codigo;
+
+    printf("100 - CACHORRO QUENTE : 10 REAIS \n101 - SORVETE : 04 REAIS \n102 - HAMBURGUER : 24 REAIS \n103 - PIZZA : 55 REAIS \n104 - PASTEL : 12 REAIS \n105 - REFRIGERANTE : 06 REAIS \n");
+    scanf("%d", &codigo);
+
+    switch (codigo) {
+
+        case 100:
+            printf("100 - CACHORRO QUENTE : 10 REAIS");
+            break;
+
+        case 101:
+            printf("101 - SORVETE : 04 REAIS");
+            break;
+
+        case 102:
+            printf("102 - HAMBURGUER : 24 REAIS");
+            break;
+
+        case 103:
+            printf("103 - PIZZA : 55 REAIS");
+            break;
+
+        case 104:
+            printf("104 - PASTEL : 12 REAIS");
+            break;
+
+        case 105:
+            printf("105 - REFRIGERANTE : 06 REAIS");
+            break;
+
+        default:
+            printf("PRODUTO INVALIDO!\n");
+            return 1;
+    }
+
+    return 0;
+}
