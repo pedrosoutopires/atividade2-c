@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main (){
+
+float a, b, resultado;
+char operador;
+
+printf("escolha o primeiro numero: ");
+scanf("%f", &a);
+printf("escolha o operador matematico: ");
+scanf(" %c", &operador);
+printf("escolha o segundo numero: ");
+scanf("%f", &b);
+
+switch (operador){
+    
+    case '+':
+        resultado = a + b;
+        break;
+    
+    case '-':
+        resultado = a - b;
+        break;
+    
+    case '*':
+        resultado = a * b;
+        break;
+    
+    case '/':
+        if (b == 0){
+        printf("ERRO!!!! ");
+        break;
+        }
+        else{
+        resultado = a / b;
+        break;
+        }
+}
+    printf("RESULTADO: %.2f ", resultado);
+    
+    return 0;
+}
