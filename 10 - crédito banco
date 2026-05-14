@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+    float saldomedio, credito;
+
+    printf("Digite o valor do saldo medio: ");
+    scanf("%f", &saldomedio);
+
+    if (saldomedio >= 0 && saldomedio <= 200)
+        credito = 0;
+
+    else if (saldomedio >= 201 && saldomedio <= 400)
+        credito = saldomedio * 0.1;
+
+    else if (saldomedio >= 401 && saldomedio <= 600)
+        credito = saldomedio * 0.3;
+
+    else
+        credito = saldomedio * 0.4;
+
+    printf("O valor do credito e: %.2f", credito);
+
+    return 0;
+}
