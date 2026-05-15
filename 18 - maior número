@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int maior(int a, int b, int c){
+    int maior;
+
+    if (a > b && a > c)
+        maior = a;
+
+    else if (b > a && b > c)
+        maior = b;
+
+    else if (c > a && c > b)
+        maior = c;
+
+    else
+        maior = a;
+}
+
+int main() {
+
+    int x, y, z;
+
+    printf("digite tres numeros inteiros: ");
+    scanf("%d%d%d", &x, &y, &z);
+
+    printf("o maior numero e: %d", maior(x, y, z));
+
+    return 0;
+}
