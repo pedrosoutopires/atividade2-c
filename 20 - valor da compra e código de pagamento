@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+float compra(int a){
+    float codigo;
+
+    if (a == 1)
+        codigo = 0.85;
+
+    else if (a == 2)
+        codigo = 0.95;
+
+    else if (a == 3)
+        codigo = 1;
+
+    else if (a == 4)
+        codigo = 1.1;
+
+    return codigo;
+}
+
+int main(){
+
+    int codigo;
+    float valorcompra, valorfinal;
+
+    printf("Digite o valor da compra: ");
+    scanf("%f", &valorcompra);
+
+    printf("Digite o metodo de pagamento: \n1-A vista (dinheiro/pix), 15 porcento de desconto \n2-A vista (cartao), 5 porcento de desconto \n3-Parcelado 2x, preco normal \n4-Parcelado 3x, 10 porcento de juros \n");
+    scanf("%d", &codigo);
+
+    valorfinal = valorcompra * (compra(codigo));
+
+    printf("O valor final e: %.2f", valorfinal);
+
+    return 0;
+}
