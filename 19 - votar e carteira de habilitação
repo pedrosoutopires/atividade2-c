@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+    int idade;
+
+    printf("digite sua idade: ");
+    scanf("%d", &idade);
+
+    if (idade >= 16 && idade < 18)
+        printf("pode votar, mas nao pode tirar carteira de habilitacao");
+
+    else if (idade >= 18)
+        printf("pode votar e pode tirar carteira de habilitacao");
+
+    else
+        printf("nao pode votar e nao pode tirar carteira de habilitacao");
+
+    return 0;
+}
